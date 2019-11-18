@@ -16,8 +16,8 @@ An apple login plugin.
   s.public_header_files = 'Classes/**/*.h'
   s.ios.deployment_target = '8.0'
   s.dependency 'Flutter'
+  s.dependency 'Firebase/Auth', '~> 6.0'
   s.dependency 'Firebase/Core'
-  s.dependency 'Firebase/Auth'
   s.static_framework = true
   s.swift_version = "5.1"
 end
