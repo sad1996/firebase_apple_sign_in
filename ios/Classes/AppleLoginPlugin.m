@@ -1,5 +1,5 @@
 #import "AppleLoginPlugin.h"
-#import <apple_login/apple_login-Swift.h>
+#import <firebase_apple_sign_in/firebase_apple_sign_in-Swift.h>
 
 @implementation AppleLoginPlugin
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {

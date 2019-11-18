@@ -17,7 +17,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  apple_login:
+  firebase_apple_sign_in:
     path: ../
 
 # For information on the generic Dart part of this file, see the

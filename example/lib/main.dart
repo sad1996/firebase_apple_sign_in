@@ -1,4 +1,4 @@
-import 'package:apple_login/apple_login.dart';
+import 'package:firebase_apple_sign_in/apple_login.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
