@@ -1,8 +1,8 @@
-name: apple_login
+name: firebase_apple_sign_in
 description: An apple login plugin.
 version: 0.0.1
-author:
-homepage:
+author: NowApps Technologies
+homepage: https://github.com/sad1996/firebase_apple_sign_in
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
