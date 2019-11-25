@@ -14,11 +14,13 @@ An apple login plugin.
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
   s.dependency 'Flutter'
   s.dependency 'Firebase/Auth', '~> 6.0'
   s.dependency 'Firebase/Core'
   s.static_framework = true
-  s.swift_version = "5.1"
+  s.swift_version = "4.2"
+  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
+
 end
 

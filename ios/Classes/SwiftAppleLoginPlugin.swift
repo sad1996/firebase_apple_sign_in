@@ -3,7 +3,10 @@ import UIKit
 import AuthenticationServices
 import Foundation
 import CommonCrypto
+#if canImport(CryptoKit)
 import CryptoKit
+#endif
+import CommonCrypto
 import Security
 import FirebaseAuth
 
@@ -61,12 +64,14 @@ public class SwiftAppleLoginPlugin: NSObject, FlutterPlugin {
   @available(iOS 13, *)
   private func sha256(_ input: String) -> String {
     let inputData = Data(input.utf8)
+    #if canImport(CryptoKit)
     let hashedData = SHA256.hash(data: inputData)
     let hashString = hashedData.compactMap {
       return String(format: "%02x", $0)
     }.joined()
-
     return hashString
+    #endif
+    return ""
   }
 
   private func randomNonceString(length: Int = 32) -> String {
